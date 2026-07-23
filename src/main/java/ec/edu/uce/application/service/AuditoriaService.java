@@ -12,9 +12,11 @@ import jakarta.transaction.Transactional;
 public class AuditoriaService {
 
     @Inject
-    private AuditoriaRepositoryImpl auditoriaRepositoryImpl;}
+    private AuditoriaRepositoryImpl auditoriaRepositoryImpl;
+
     public void insertar(Auditoria1 v){
         this.auditoriaRepositoryImpl.persist(v);
+
 
     }
 
